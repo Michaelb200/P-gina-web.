@@ -5,7 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Teoría Curricular</title>
     <style>
-        body {
+        body{
+    background-image: url("fondo.png");
+    background-size: 100% 100vh;
+    background-position: center top;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    color: white;
+    min-height: 10000vh;
+}
+		{
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.desplegable {
+    position: relative;
+    display: inline-block;
+    margin-left: 0;
+}
+
+.boton {
+    background-color: aqua;
+    color: black;
+    padding: 15px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    box-shadow: 0 0 15px aqua;
+}
+
+.contenido {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+    background-color: #333;
+    min-width: 220px;
+    box-shadow: 0 0 15px aqua;
+    border-radius: 0 10px 10px 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.contenido a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 17px;
+}
+
+.contenido a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.desplegable:hover .contenido,
+.desplegable:focus-within .contenido {
+    display: block;
+}
+		
+		{
             background-color: #333;
             min-height: 100vh;
             margin: 0;
@@ -42,15 +108,16 @@
             box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
         }
         .descripcion {
-            color: #ccc;
-            max-width: 750px;
-            text-align: center;
-            line-height: 1.6;
-            font-size: 1.1rem;
+	color: #ccc;
+	max-width: 750px;
+	text-align: justify;
+	line-height: 1.6;
+	font-size: 1.1rem;
         }
     </style>
 </head>
 <body>
+	
 
 <h1 class="titulo">Conceptos Básicos</h1>
 <p><span class="descripcion">El término currículo es polisemántico y se utiliza de manera intercambiable para aludir a planes de estudio, programas e incluso a la implementación didáctica. Algunos autores consideran la teoría curricular como una disciplina autónoma, mientras que otros la interpretan como parte del área de la didáctica. A partir de lo anterior, podemos clasificar las definiciones de currículo en cinco categorías distintas:</span></p>
@@ -59,10 +126,14 @@
 <p class="descripcion">3.- El currículo visto como experiencia: Esta interpretación del currículo se centra, no en lo que se debería hacer, sino en lo que realmente se lleva a cabo, es decir: la suma de las experiencias que los estudiantes realizan bajo la guía de la escuela.    </p>
 <p class="descripcion"> 4.- El currículo como sistema: Este enfoque se desarrolla, a partir de la influencia de la teoría de sistemas en educación; el sistema se caracteriza por: - Elementos constitutivos - Relaciones entre los elementos constitutivos. Se destaca la existencia de metas, las cuales dirigen los elementos y sus relaciones. Se interpreta el enfoque de sistemas como un proceso sistemático y lineal. (Káufmán)</p>
 <p class="descripcion">5.- El currículo como disciplina: En esta clasificación, el currículo no solo es un proceso activo y dinámico, sino que también es una reflexión sobre ese mismo proceso.</p>
-<p class="descripcion">Anexos: </p>
-<p class="descripcion"><a href="https://youtu.be/HSP2p2wS0eQ?si=-LTX1CQutggiqmen">Conceptos</a> </p>
-<p class="descripcion">&nbsp;</p>
-<p>&nbsp;</p>
-<p class="descripcion">&nbsp;</p>
+<div class="desplegable">
+  <button class="boton" type="button">
+        Saber más ▼
+  </button>
+    <div class="contenido">
+        <a href="https://youtu.be/HSP2p2wS0eQ?si=-LTX1CQutggiqmen">Conceptos</a>
+		<a href="https://youtu.be/HSP2p2wS0eQ?si=-LTX1CQutggiqmen">Conceptos</a>
+    </div>
+</div>
 </body>
 </html>
