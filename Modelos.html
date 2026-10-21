@@ -21,6 +21,59 @@ body {
     min-height: 10000vh;
 }
 		{
+            background-color: #222;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        .desplegable {
+            position: relative;
+            display: inline-block;
+        }
+
+        .boton {
+            background-color: aqua;
+            color: black;
+            padding: 15px 25px;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 0 0 15px aqua;
+        }
+
+        .contenido {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 220px;
+            box-shadow: 0 0 15px aqua;
+            border-radius: 10px;
+            overflow: hidden;
+            z-index: 1;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .contenido a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 17px;
+        }
+
+        .contenido a:hover {
+            background-color: aqua;
+            color: black;
+        }
+
+        .desplegable:hover .contenido,
+        .desplegable:focus-within .contenido {
+            display: block;
+        }
+		{
 			margin: 0;
             min-height: 100vh;
             font-family: Arial, sans-serif;
@@ -84,8 +137,32 @@ body {
 
 <h1 class="titulo">Modelos Curriculares</h1>
 <h2><span class="descripcion">MODELOS DE DISEÑO CURRICULAR </span></h2>
+<p style="text-align: justify;">Los modelos de diseño curricular son enfoques o propuestas que orientan la organización, planificación y desarrollo de los contenidos, objetivos, actividades y evaluaciones dentro de un proceso educativo. Su propósito es facilitar la enseñanza y favorecer el aprendizaje de los estudiantes. </p>
+<p style="text-align: justify;">¿Cuáles son sus beneficios? </p>
+<p style="text-align: justify;">1. Organización de la enseñanza: permiten estructurar los contenidos y las actividades de manera ordenada y coherente. </p>
+<p style="text-align: justify;">2. Claridad de objetivos: ayudan a establecer qué aprendizajes se espera que alcancen los estudiantes. </p>
+<p style="text-align: justify;">3. Mejora del aprendizaje: favorecen la selección de estrategias didácticas adecuadas para comprender los contenidos. </p>
+<p style="text-align: justify;">4. Adaptación al contexto: permiten considerar las necesidades, características e intereses de los alumnos.</p>
+<p style="text-align: justify;"> 5. Evaluación del aprendizaje: facilitan identificar los avances y las dificultades de los estudiantes. </p>
+<p style="text-align: justify;">6. Orientación docente: ofrecen una guía para planificar las clases y seleccionar materiales educativos.</p>
+<p style="text-align: justify;"> 7.Mejora continua: permiten revisar y ajustar los planes de estudio para responder a las necesidades educativas. </p>
+<p style="text-align: justify;"><img src="modeloscurricular.png" width="933" height="863" alt=""/></p>
+<p style="text-align: justify;">Ejemplos de modelos de diseño curricular:</p>
+<ul>
+  <li>Modelo de Ralph Tyler: se centra en los objetivos educativos, las experiencias de aprendizaje, la organización de estas experiencias y la evaluación. </li>
+  <li> Modelo de Hilda Taba: propone desarrollar el currículo a partir del diagnóstico de necesidades, con participación del docente. </li>
+  <li> Modelo de Ángel Díaz-Barriga: aborda el diseño curricular desde una perspectiva que considera la fundamentación, el contexto educativo y la organización de los planes de estudio.</li>
+	 <button class="boton" type="button">
+        Saber más ▼
+  </button>
+    <div class="contenido">
+        <a href="https://youtu.be/Lo2QmkhT_kI?si=ZUawGfdo9Di5JbXP">Modelo por objetivos conductuales</a>
+		<a href="https://youtu.be/qV2UDhYvijA?si=WafYu-Q4Fs31OAKJ">Modelo de investigación</a>
+		<a href="https://youtu.be/4wpWWl5Sq2Y?si=MKiq93wzHSjCr720">Modelo de investigación</a>
+    </div>
+</ul>
 <h3><span class="descripcion">Modelo por objetivos conductuales:</span></h3>
-<p><span class="descripcion"> Este es el modelo más clásico, iniciado por Bobbitt y derivado de la preocupación por los resultados de la enseñanza; es decir, concibe la educación como un medio para alcanzar fines. En este modelo los objetivos cobran mayor importancia, al respecto Tyler describe que un objetivo es “un enunciado que ilustra o describe la clase de comportamiento que se espera que el estudiante logre de modo tal que cuando el comportamiento sea alcanzado, este sea reconocido” Este modelo se basa en cuatro aspectos: </span></p>
+<p><span class="descripcion" style="text-align: justify"> Este es el modelo más clásico, iniciado por Bobbitt y derivado de la preocupación por los resultados de la enseñanza; es decir, concibe la educación como un medio para alcanzar fines. En este modelo los objetivos cobran mayor importancia, al respecto Tyler describe que un objetivo es “un enunciado que ilustra o describe la clase de comportamiento que se espera que el estudiante logre de modo tal que cuando el comportamiento sea alcanzado, este sea reconocido” Este modelo se basa en cuatro aspectos: </span></p>
 <p><span class="descripcion">&#8226; Determinar los fines que desea alcanzar la escuela: se analiza en este punto al alumno, la vida exterior a la escuela</span></p>
 <p><span class="descripcion"> &#8226; Seleccionar las experiencias educativas: Se eligen aquellas que conduzcan al mejor logro de estos fines. </span></p>
 <p><span class="descripcion">&#8226; Organizar las experiencias educativas: Se otorga un orden a las actividades y experiencias a través de unidades, cursos y programas. 
@@ -93,14 +170,21 @@ body {
 <p><span class="descripcion">&#8226; Comprobar el logro propuesto: Corresponde a la evaluación de resultados, es decir, en qué medida el currículum y la enseñanza satisfacen los objetivos formulados. </span></p>
 <p><img src="1.png" width="1003" height="603" alt=""/></p>
 <h3><span class="descripcion">Modelo de proceso:</span></h3>
-<p><span class="descripcion"> Este modelo pretende flexibilizar el diseño, rechazando la idea de someter los contenidos y actividades de aprendizaje a la especificación de objetivos de comportamiento, concibiendo al conocimiento humano como algo vivo, producto del pensamiento del hombre, pero que también está en construcción. En este modelo resalta la diferencia entre objetivos de instrucción (objetivos de ejecución, aquellos que encaminan al alumno hacia una conducta previamente determinada) y los objetivos expresivos (que describen una situación de aprendizaje, e identifican una actividad en la que se encontrará sumergido el aprendiz o un problema que tendrá que resolver, sin mencionar lo que tiene.  </span></p>
+<p><span class="descripcion" style="text-align: justify"> Este modelo pretende flexibilizar el diseño, rechazando la idea de someter los contenidos y actividades de aprendizaje a la especificación de objetivos de comportamiento, concibiendo al conocimiento humano como algo vivo, producto del pensamiento del hombre, pero que también está en construcción. En este modelo resalta la diferencia entre objetivos de instrucción (objetivos de ejecución, aquellos que encaminan al alumno hacia una conducta previamente determinada) y los objetivos expresivos (que describen una situación de aprendizaje, e identifican una actividad en la que se encontrará sumergido el aprendiz o un problema que tendrá que resolver, sin mencionar lo que tiene.  </span></p>
 <p><img src="2.jpg" width="974" height="565" alt=""/></p>
 <h3><span class="descripcion">Modelo de investigación:</span></h3>
-<p><span class="descripcion"> Por último, Stenhouse propone el modelo de investigación, el cual busca un compromiso más profundo por parte del profesor, ya que en este modelo el currículum se concibe como una investigación de la cual emanan permanentemente propuestas de innovación. Desde esta perspectiva emanan las siguientes características: - En este modelo, el diseñador es percibido como un investigador. El currículum está pensado más en términos hipotéticos que en un producto acabado. El currículo se plantea como la investigación de problemas a solucionar. El currículo debe recoger las variables del contexto de la escuela y su ambiente. La participación del profesor es fundamental, puesto que él mismo debe estudiar su enseñanza.</span></p>
+<p><span class="descripcion" style="text-align: justify"> Por último, Stenhouse propone el modelo de investigación, el cual busca un compromiso más profundo por parte del profesor, ya que en este modelo el currículum se concibe como una investigación de la cual emanan permanentemente propuestas de innovación. Desde esta perspectiva emanan las siguientes características: - En este modelo, el diseñador es percibido como un investigador. El currículum está pensado más en términos hipotéticos que en un producto acabado. El currículo se plantea como la investigación de problemas a solucionar. El currículo debe recoger las variables del contexto de la escuela y su ambiente. La participación del profesor es fundamental, puesto que él mismo debe estudiar su enseñanza.</span></p>
 <p><img src="3.jpg" width="986" height="602" alt=""/></p>
 <p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+<div class="desplegable">
+  <button class="boton" type="button">
+        Saber más ▼
+  </button>
+    <div class="contenido">
+        <a href="https://youtu.be/pkH96RUpqzY?si=rQ2y8phCXrPMXYOi">Modelo por objetivos conductuales</a>
+		<a href="https://youtu.be/HSP2p2wS0eQ?si=-LTX1CQutggiqmen">Modelo de proceso</a>
+		<a href="https://youtu.be/sqtnenlQw3U?si=mpT5lpydlt2Zv_rl">Modelo de investigación</a>
+    </div>
+</div>
 </body>
 </html>
